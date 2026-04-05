@@ -20,7 +20,7 @@ if user_password == "0911":
     st.write("우리 학생들을 위한 맞춤 문제 생성기입니다.")
     
     # 모델 설정 (최신 버전인 2.0-flash 권장, 2.5는 아직 지원 여부 확인 필요)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
 
     # 4. 파일 업로드
     uploaded_file = st.file_uploader("📸 분석할 문제 사진을 올려주세요", type=["jpg", "jpeg", "png"])
